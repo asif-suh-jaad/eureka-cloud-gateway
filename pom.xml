@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sasajja.demo</groupId>
+    <artifactId>runtime-discovery-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Gateway Demo</name>
+    <properties>
+        <java.version>11</java.version>
+        <spring-cloud.version>2021.0.1</spring-cloud.version>
+    </properties>
+
+    <modules>
+        <module>service</module>
+        <module>registry</module>
+        <module>gateway</module>
+        <module>service-client</module>
+    </modules>
+
+</project>
+
+
+
+
+
+
+curl --request POST \
+  --url https://dev-90305700.okta.com/oauth2/default/v1/token \
+  --header 'accept: application/json' \
+  --header 'authorization: Basic MG9hNDNremthdERVZHNVS1o1ZDc6UVdXQ1ZsUG9zUzlUS0RnLXRaWkNYWWZLUHN6OU92NmNVQUczRk1XOA==' \
+  --header 'cache-control: no-cache' \
+  --header 'content-type: application/x-www-form-urlencoded' \
+  --data 'grant_type=authorization_code&scope=customScope'
